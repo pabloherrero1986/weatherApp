@@ -5,6 +5,7 @@ import { User } from '../models/user.model';
   providedIn: 'root',
 })
 export class LoginService {
+  let fetchTest = 'test';
   users: User[] = [
     new User('user1', '12345678'),
     new User('user2', '12345678'),
