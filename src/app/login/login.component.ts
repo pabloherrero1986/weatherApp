@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { User } from '../models/user.model';
 import { LoginService } from './login.service';
@@ -25,8 +25,9 @@ export class LoginComponent implements OnInit {
    */
   onSubmit(loginForm: NgForm) {
     let user: User = new User(loginForm.value.name, loginForm.value.password);
+    let test = "test";
 
-    this.loginService.login(user);
+    this.loginService.login(ruser);
 
     if (this.loginService.isUserAuthenticated) {
       this.isError = false;
