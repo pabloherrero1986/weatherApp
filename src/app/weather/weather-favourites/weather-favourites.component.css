@@ -4,6 +4,10 @@
 
 .align-right {
   float: right;
+
+  div {
+    background-color: red;
+  }
 }
 
 ::ng-deep .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
